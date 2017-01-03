@@ -1,0 +1,42 @@
+2016-10-22 14:19:14 Error: [Cake\Core\Exception\MissingPluginException] Plugin cakephp-upload could not be found.
+Exception Attributes: array (
+  'plugin' => 'cakephp-upload',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\clothes\config\bootstrap.php(226): Cake\Core\Plugin::load('cakephp-upload')
+#1 C:\xampp\htdocs\clothes\bin\cake.php(32): include('C:\\xampp\\htdocs...')
+#2 {main}
+
+
+2016-10-22 14:19:23 Error: [Cake\Core\Exception\MissingPluginException] Plugin cakephp-upload could not be found.
+Exception Attributes: array (
+  'plugin' => 'cakephp-upload',
+)
+Stack Trace:
+#0 C:\xampp\htdocs\clothes\config\bootstrap.php(226): Cake\Core\Plugin::load('cakephp-upload')
+#1 C:\xampp\htdocs\clothes\bin\cake.php(32): include('C:\\xampp\\htdocs...')
+#2 {main}
+
+
+2016-10-22 14:22:23 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'fashion.product' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\clothes\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'product', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\clothes\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('product', Array)
+#2 C:\xampp\htdocs\clothes\vendor\cakephp\cakephp\src\ORM\Table.php(440): Cake\Database\Schema\CachedCollection->describe('product')
+#3 C:\xampp\htdocs\clothes\vendor\cakephp\cakephp\src\ORM\Table.php(518): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\clothes\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\clothes\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\clothes\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'product', 'Product')
+#7 C:\xampp\htdocs\clothes\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Product')
+#8 C:\xampp\htdocs\clothes\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Product')
+#9 C:\xampp\htdocs\clothes\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(52): Bake\Shell\BakeShell->Bake\Shell\{closure}('product', 0)
+#10 C:\xampp\htdocs\clothes\vendor\cakephp\bake\src\Shell\BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('product')
+#12 C:\xampp\htdocs\clothes\vendor\cakephp\cakephp\src\Console\Shell.php(452): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\clothes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\xampp\htdocs\clothes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\xampp\htdocs\clothes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\xampp\htdocs\clothes\bin\cake.php(34): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
